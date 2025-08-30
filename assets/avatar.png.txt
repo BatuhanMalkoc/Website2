@@ -1,0 +1,6 @@
+This is a placeholder for the image that will be at this path: assets/avatar.png
+
+Description from the AI designer:
+"A professional headshot or avatar of Batuhan Malkoç."
+
+Please replace this .txt file with your actual image file.
