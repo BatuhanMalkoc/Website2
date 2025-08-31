@@ -1,0 +1,6 @@
+Bu, şu görsel için bir yer tutucudur: images/magic-spell.png
+
+Proje Başlığı: Magic Spell VFX
+Açıklama: "A collection of magical spell effects (fireball, ice shard, arcane blast)."
+
+Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

@@ -1,6 +1,0 @@
-This is a placeholder for the image that will be at this path: images/youtube-channel-preview.jpg
-
-Description from the AI designer:
-"Preview image for Batuhan Malkoç's YouTube channel."
-
-Please replace this .txt file with your actual image file.

@@ -1,0 +1,6 @@
+Bu, şu görsel için bir yer tutucudur: images/wormhole-shader.png
+
+Proje Başlığı: Wormhole
+Açıklama: "A mesmerizing shader creating a wormhole tunnel."
+
+Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

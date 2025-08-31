@@ -1,0 +1,6 @@
+Bu, şu görsel için bir yer tutucudur: images/force-field.png
+
+Proje Başlığı: Force Field Shader
+Açıklama: "An energy shield shader with dynamic hit effects."
+
+Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

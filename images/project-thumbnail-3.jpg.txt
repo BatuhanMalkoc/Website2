@@ -1,6 +1,0 @@
-This is a placeholder for the image that will be at this path: images/project-thumbnail-3.jpg
-
-Description from the AI designer:
-"Thumbnail for a project on Rigging & Animation Tools."
-
-Please replace this .txt file with your actual image file.

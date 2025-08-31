@@ -1,0 +1,6 @@
+Bu, şu görsel için bir yer tutucudur: images/light-burst.png
+
+Proje Başlığı: Light Burst
+Açıklama: "A dynamic and impactful light burst effect."
+
+Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

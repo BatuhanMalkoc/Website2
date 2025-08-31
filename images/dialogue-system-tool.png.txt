@@ -1,0 +1,6 @@
+Bu, şu görsel için bir yer tutucudur: images/dialogue-system-tool.png
+
+Proje Başlığı: Dialogue System Tool
+Açıklama: "An intuitive editor tool for creating and managing complex dialogue trees."
+
+Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.
