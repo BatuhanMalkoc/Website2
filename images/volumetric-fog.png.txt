@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/volumetric-fog.png
-
-Proje Başlığı: Volumetric Fog & Lighting
-Açıklama: "Real-time volumetric fog and lighting system for atmospheric effects."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

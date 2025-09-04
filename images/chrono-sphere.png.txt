@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/chrono-sphere.png
-
-Proje Başlığı: Chrono Sphere
-Açıklama: "Time-warp sphere combining motion vectors + signed distance fields for refraction distortions."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

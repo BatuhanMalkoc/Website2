@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/procedural-terrain.png
-
-Proje Başlığı: Procedural Terrain Generator
-Açıklama: "A tool for generating infinite, detailed terrains with biome support."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

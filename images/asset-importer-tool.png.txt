@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/asset-importer-tool.png
-
-Proje Başlığı: Asset Importer Tool
-Açıklama: "Automated asset import and processing tool for Unity."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/custom-post-processing.png
-
-Proje Başlığı: Custom Post-Processing Stack
-Açıklama: "An extensible post-processing framework with custom effects."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

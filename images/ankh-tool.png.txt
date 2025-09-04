@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/ankh-tool.png
-
-Proje Başlığı: Ankh Tool
-Açıklama: "A custom editor tool for Ankh symbol generation."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

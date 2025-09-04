@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/portal-vfx.png
-
-Proje Başlığı: Portal VFX
-Açıklama: "A shimmering portal effect with distortion and particle trails."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

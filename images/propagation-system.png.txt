@@ -1,6 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/propagation-system.png
-
-Proje Başlığı: Propagation System
-Açıklama: "GPU-driven propagation with culling, millions of instances at high FPS. Unity + Compute + Forward Lit."
-
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.

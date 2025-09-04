@@ -1,2 +1,0 @@
-Bu, şu görsel için bir yer tutucudur: images/profile-picture.png
-Lütfen bu .txt dosyasını gerçek görsel dosyanızla değiştirin.
