@@ -1,0 +1,3 @@
+This is a placeholder for the image: images/profile-picture.png
+
+Please replace this .txt file with your actual image file.

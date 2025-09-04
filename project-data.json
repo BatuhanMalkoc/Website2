@@ -1,0 +1,113 @@
+[
+  {
+    "id": "project1",
+    "title": "Propagation System",
+    "imagePath": "images/propagation-system.png",
+    "description": "GPU-driven propagation with culling, millions of instances at high FPS. Unity + Compute + Forward Lit.",
+    "detailedContent": "<h3>Propagation System - Deep Dive</h3><p>This system leverages GPU instancing and compute shaders to efficiently render millions of environmental assets. Key features include erosion-aware placement, dynamic noise fields for variation, and advanced frustum and occlusion culling techniques. It supports batched material slots and an artist-friendly layer graph for intuitive control. The system also integrates LOD (Level of Detail) and impostors for performance optimization, along with streaming chunks for large-scale environments.</p><ul><li><strong>Technology:</strong> Unity, C#, Compute Shaders, Shader Graph</li><li><strong>Features:</strong> GPU Instancing, Frustum Culling, Occlusion Culling, LOD, Impostors, Streaming Chunks, Erosion-aware Placement</li><li><strong>Performance:</strong> Achieves high FPS with millions of instances.</li></ul>",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aI5EBxR6-S0"
+  },
+  {
+    "id": "project2",
+    "title": "Chrono Sphere",
+    "imagePath": "images/chrono-sphere.png",
+    "description": "Time-warp sphere combining motion vectors + signed distance fields for refraction distortions.",
+    "detailedContent": "<h3>Chrono Sphere - Visual Breakdown</h3><p>The Chrono Sphere is a complex visual effect that simulates a time-warp distortion. It combines real-time motion vectors with signed distance fields (SDFs) to create dynamic refraction and distortion effects. The core of the effect involves animated Voronoi patterns, curl-noise advection for fluid motion, and a stencil portal mask to define its boundaries. Impact frames are driven by a custom LUT (Look-Up Table) for precise timing and visual punch.</p><ul><li><strong>Technology:</strong> Unity, Shader Graph, VFX Graph</li><li><strong>Techniques:</strong> Motion Vectors, Signed Distance Fields (SDF), Voronoi Noise, Curl Noise Advection, Stencil Masking, LUT-driven Animation</li><li><strong>Effect:</strong> Dynamic time-warp and refraction distortion.</li></ul>",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aI5EBxR6-S0"
+  },
+  {
+    "id": "project3",
+    "title": "GPU Scene Generator",
+    "imagePath": "images/gpu-scene-generator.png",
+    "description": "Artist-friendly, data-driven scene generation with pluggable shaders and material inheritance.",
+    "detailedContent": "<h3>GPU Scene Generator - Tool Overview</h3><p>This tool provides an artist-friendly, data-driven solution for generating complex scenes entirely on the GPU. It features a graph-based rule system for defining placement logic and modular emitters for various asset types. The system supports on-GPU LOD management and a streaming tilepool for efficient handling of vast environments. It's designed with extensibility in mind, allowing for pluggable shaders and material inheritance to easily customize visual output. Comprehensive documentation is provided for both artists and technical users.</p><ul><li><strong>Technology:</strong> Unity, C#, Compute Shaders, Custom Editor Tools</li><li><strong>Features:</strong> GPU Instancing, Frustum Culling, Occlusion Culling, LOD, Impostors, Streaming Chunks, Erosion-aware Placement</li><li><strong>Performance:</strong> Achieves high FPS with millions of instances.</li></ul>",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aI5EBxR6-S0"
+  },
+  {
+    "id": "project4",
+    "title": "Procedural Terrain Generator",
+    "imagePath": "images/procedural-terrain.png",
+    "description": "A tool for generating infinite, detailed terrains with biome support.",
+    "detailedContent": "<h3>Procedural Terrain Generator - Overview</h3><p>This tool creates vast, procedurally generated terrains with support for multiple biomes, dynamic LOD, and erosion simulation. It uses a combination of Perlin noise, Worley noise, and custom algorithms to create realistic and varied landscapes. The system is highly optimized for performance, enabling large-scale environments without significant overhead.</p><ul><li><strong>Technology:</strong> Unity, C#, Compute Shaders</li><li><strong>Features:</strong> Infinite Terrain, Biome Generation, Dynamic LOD, Erosion Simulation</li><li><strong>Scalability:</strong> Designed for large open-world games.</li></ul>",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aI5EBxR6-S0"
+  },
+  {
+    "id": "project5",
+    "title": "Volumetric Fog & Lighting",
+    "imagePath": "images/volumetric-fog.png",
+    "description": "Real-time volumetric fog and lighting system for atmospheric effects.",
+    "detailedContent": "<h3>Volumetric Fog &amp; Lighting - Details</h3><p>An advanced real-time volumetric fog and lighting system that enhances atmospheric depth and realism. It supports dynamic light scattering, god rays, and interaction with various light sources.The system is optimized to run efficiently on modern GPUs, providing stunning visual quality without a heavy performance cost. Customizable parameters allow for a wide range of atmospheric effects, from dense mist to subtle haze.</p><ul><li><strong>Technology:</strong> Unity, C#, Custom Shaders</li><li><strong>Features:</strong> Real-time Volumetric Fog, God Rays, Dynamic Light Scattering, Performance Optimized</li><li><strong>Visuals:</strong> Enhances atmospheric depth and realism.</li></ul>",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aI5EBxR6-S0"
+  },
+  {
+    "id": "project6",
+    "title": "Custom Post-Processing Stack",
+    "imagePath": "images/custom-post-processing.png",
+    "description": "An extensible post-processing framework with custom effects.",
+    "detailedContent": "<h3>Custom Post-Processing Stack - Features</h3><p>A modular and extensible post-processing framework built from scratch, allowing for a wide array of custom visual effects. Includes effects like chromatic aberration, bloom, depth of field, and custom color grading. Designed for easy integration and expansion, enabling artists to create unique visual styles for their projects. Optimized for performance and compatibility with various rendering pipelines.</p><ul><li><strong>Technology:</strong> Unity, C#, Custom Shaders</li><li><strong>Features:</strong> Modular Effects, Chromatic Aberration, Bloom, Depth of Field, Color Grading</li><li><strong>Customization:</strong> Easy to extend with new effects.</li></ul>",
+    "youtubeUrl": "https://www.youtube.com/watch?v=aI5EBxR6-S0"
+  },
+  {
+    "id": "showcase1",
+    "title": "Light Burst",
+    "imagePath": "images/light-burst.png",
+    "description": "A dynamic and impactful light burst effect.",
+    "detailedContent": "<h3>Light Burst VFX</h3><p>This visual effect demonstrates a powerful light burst, often used for impacts, spell casting, or dramatic reveals. It utilizes a combination of particle systems, animated textures, and post-processing effects to create a bright, expanding energy wave.</p><ul><li><strong>Category:</strong> VFX</li><li><strong>Key Elements:</strong> Particle Systems, Animated Textures, Glow Effects</li></ul>"
+  },
+  {
+    "id": "showcase2",
+    "title": "Wormhole",
+    "imagePath": "images/wormhole-shader.png",
+    "description": "A mesmerizing shader creating a wormhole tunnel.",
+    "detailedContent": "<h3>Wormhole Shader</h3><p>A complex shader that generates a visually stunning wormhole effect, suitable for sci-fi portals or transition sequences. It employs advanced UV manipulation, noise functions, and color grading to simulate depth and motion within the tunnel.</p><ul><li><strong>Category:</strong> Shader</li><li><strong>Key Elements:</strong> UV Distortion, Noise Functions, Color Grading</li></ul>"
+  },
+  {
+    "id": "showcase3",
+    "title": "Ankh Tool",
+    "imagePath": "images/ankh-tool.png",
+    "description": "A custom editor tool for Ankh symbol generation.",
+    "detailedContent": "<h3>Ankh Symbol Generator Tool</h3><p>This Unity editor tool allows artists to quickly generate and customize Ankh symbols with various parameters, including size, material, and animation properties. It streamlines the creation process for frequently used assets.</p><ul><li><strong>Category:</strong> Tool</li><li><strong>Key Elements:</strong> Unity Editor Scripting, Custom Inspectors</li></ul>"
+  },
+  {
+    "id": "showcase4",
+    "title": "Force Field Shader",
+    "imagePath": "images/force-field.png",
+    "description": "An energy shield shader with dynamic hit effects.",
+    "detailedContent": "<h3>Force Field Shader - Visuals</h3><p>This shader creates a dynamic force field effect, perfect for protective barriers or sci-fi elements. It features animated energy patterns, customizable colors, and reactive hit effects that ripple across the surface when impacted. Optimized for real-time rendering with adjustable transparency and distortion properties.</p><ul><li><strong>Category:</strong> Shader</li><li><strong>Key Elements:</strong> Animated Textures, Distortion, Hit Effects, Real-time Rendering</li></ul>"
+  },
+  {
+    "id": "showcase5",
+    "title": "Magic Spell VFX",
+    "imagePath": "images/magic-spell.png",
+    "description": "A collection of magical spell effects (fireball, ice shard, arcane blast).",
+    "detailedContent": "<h3>Magic Spell VFX Pack</h3><p>A versatile collection of magical spell effects, including a fiery fireball, a sharp ice shard, and a shimmering arcane blast. Each effect is designed with distinct visual characteristics and optimized particle systems. They are easily customizable for color, scale, and intensity, making them suitable for various fantasy games.</p><ul><li><strong>Category:</strong> VFX</li><li><strong>Key Elements:</strong> Particle Systems, Animated Textures, Elemental Effects (Fire, Ice, Arcane)</li></ul>"
+  },
+  {
+    "id": "showcase6",
+    "title": "Dialogue System Tool",
+    "imagePath": "images/dialogue-system-tool.png",
+    "description": "An intuitive editor tool for creating and managing complex dialogue trees.",
+    "detailedContent": "<h3>Dialogue System Tool - Features</h3><p>This Unity editor tool provides a comprehensive solution for designing and managing complex dialogue trees. It features a node-based visual editor, support for branching narratives, character portraits, and integration with localization systems. The tool streamlines the writing and implementation of in-game conversations, making it easy for writers and designers to create engaging storytelling experiences.</p><ul><li><strong>Category:</strong> Tool</li><li><strong>Key Elements:</strong> Node-based Editor, Branching Logic, Localization Support, Character Management</li></ul>"
+  },
+  {
+    "id": "showcase7",
+    "title": "Liquid Shader",
+    "imagePath": "images/liquid-shader.png",
+    "description": "Realistic liquid shader with dynamic surface tension and foam.",
+    "detailedContent": "<h3>Liquid Shader - Realism</h3><p>A highly realistic liquid shader designed for various container types, from potions to water bottles. It simulates dynamic surface tension, foam generation at the edges, and realistic light refraction. The shader supports customizable liquid color, viscosity, and fill levels, providing a convincing visual representation of fluids in game environments.</p><ul><li><strong>Category:</strong> Shader</li><li><strong>Key Elements:</strong> Dynamic Surface Tension, Foam, Refraction, Customizable Properties</li></ul>"
+  },
+  {
+    "id": "showcase8",
+    "title": "Portal VFX",
+    "imagePath": "images/portal-vfx.png",
+    "description": "A shimmering portal effect with distortion and particle trails.",
+    "detailedContent": "<h3>Portal VFX - Dimensional Gateway</h3><p>This visual effect creates a captivating portal, suggesting a gateway to another dimension. It combines animated textures for a shimmering surface, distortion effects for a sense of otherworldly energy, and particle trails that emanate from its edges. The effect is designed to be visually striking and can be customized for different elemental themes.</p><ul><li><strong>Category:</strong> VFX</li><li><strong>Key Elements:</strong> Animated Textures, Distortion, Particle Trails, Energy Effects</li></ul>"
+  },
+  {
+    "id": "showcase9",
+    "title": "Asset Importer Tool",
+    "imagePath": "images/asset-importer-tool.png",
+    "description": "Automated asset import and processing tool for Unity.",
+    "detailedContent": "<h3>Asset Importer Tool - Automation</h3><p>An essential Unity editor tool for automating the asset import and processing pipeline. It allows for predefined rules to automatically set up textures, materials, models, and animations upon import. This tool ensures consistency across assets, reduces manual errors, and significantly speeds up the workflow for large projects with many assets.</p><ul><li><strong>Category:</strong> Tool</li><li><strong>Key Elements:</strong> Unity Editor Scripting, Automated Rules, Batch Processing, Workflow Optimization</li></ul>"
+  }
+]

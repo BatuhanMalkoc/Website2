@@ -1,0 +1,843 @@
+<html lang="en" data-theme="dark"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Batuhan Malkoç — Technical Artist &amp; VFX/Shader Showcase</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ================= NAV ================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#hero" aria-label="Home">
+        <div class="logo" aria-hidden="true"></div>
+        <span>Batuhan Malkoç</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#youtube" data-i18n="nav.youtube">YouTube</a>
+        <a href="#projects" data-i18n="nav.projects">Projects</a>
+        <a href="#showcase" data-i18n="nav.showcase">Showcase</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </nav>
+      <div class="nav-right">
+        <div class="switch" role="tablist" aria-label="Language">
+          <button class="lang" data-lang="en" aria-selected="true">EN</button>
+          <button class="lang" data-lang="tr">TR</button>
+        </div>
+        <button class="theme" id="theme-toggle" title="Toggle theme">🌞/🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section id="hero" class="hero">
+    <div class="container wrap">
+      <div>
+        <span class="tag" data-i18n="hero.role">Technical Artist &amp; Game Developer</span>
+        <h1 class="title">Batuhan Malkoç</h1>
+        <p class="lead" data-i18n="hero.lead">Crafting immersive experiences through code, shaders, and visual effects.</p>
+        <div class="cta-row">
+          <a class="btn" href="#projects" data-i18n="cta.viewProjects">View Projects</a>
+          <a class="btn" href="#showcase" data-i18n="cta.viewShowcase">Open VFX/Shader Showcase</a>
+          <a class="btn" href="cv.html" target="_blank" rel="noopener" data-i18n="cta.viewCv">CV'mi Görüntüle</a>
+        </div>
+      </div>
+      <div class="portrait"><img src="images/profile-picture.png" alt="Batuhan Malkoç Profile Picture"></div>
+    </div>
+  </section>
+
+  <!-- ================= YOUTUBE ================= -->
+  <section id="youtube" class="container">
+    <h2 class="section-title" data-i18n="yt.title">YouTube &amp; Socials</h2>
+    <p class="sub" data-i18n="yt.sub">Follow my channel and watch my latest video.</p>
+    <div class="yt-wrap">
+      <article class="yt-card">
+        <h3 style="margin-top:0" data-i18n="yt.cardTitle">My Channel</h3>
+        <p class="muted" data-i18n="yt.cardDesc">I post long-form breakdowns on VFX Graph, shaders, tools and technical art processes.</p>
+        <div class="cta">
+          <a class="yt-btn" id="yt-link" href="https://www.youtube.com/@UnityM%C3%BCtercimi" target="_blank" rel="noopener" data-i18n="yt.visitChannel">Visit Channel</a>
+          <a class="btn" href="#showcase" data-i18n="yt.toShowcase">Explore Showcase</a>
+        </div>
+      </article>
+      <article class="video-card">
+        <h3 style="margin-top:0" data-i18n="yt.latest">Latest Video</h3>
+        <div class="video-frame">
+          <!-- Replace data-src with your video id/link. JS will upgrade it. -->
+          <iframe id="latestVideo" src="https://www.youtube.com/embed/23yVfz9R-1w" title="Latest Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+        </div>
+        <p class="muted" data-i18n="yt.caption">6
+‑hour Unity VFX Graph course.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section id="projects" class="container">
+    <h2 class="section-title" data-i18n="projects.title">Projects</h2>
+    <div class="grid cols-3" id="projectGrid">
+
+      <!-- Project cards will be dynamically generated here by JavaScript -->
+
+    </div>
+  </section>
+
+
+  <section id="showcase" class="container" style="display: none;">
+    <div class="showcase-head">
+      <div>
+        <h2 class="section-title" data-i18n="show.title">VFX / Shader / Tools Showcase</h2>
+        <p class="sub" data-i18n="show.sub">Filter the gallery and click tiles to enjoy rainbow ripple effects.</p>
+      </div>
+      <div class="filter" role="tablist" aria-label="Filter">
+        <button class="active" data-filter="all" data-i18n="filters.all">All</button>
+        <button data-filter="vfx" data-i18n="filters.vfx">VFX</button>
+        <button data-filter="shader" data-i18n="filters.shader">Shader</button>
+        <button data-filter="tool" data-i18n="filters.tool">Tool</button>
+      </div>
+    </div>
+
+    <div class="grid cols-3" id="showcaseGrid">
+
+      <!-- Showcase cards will be dynamically generated here by JavaScript -->
+
+    </div>
+  </section>
+  <!-- ================= SHOWCASE ================= -->
+  
+
+  <!-- ================= SHOWCASE END ================= -->
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="container center">
+    <h2 class="section-title" data-i18n="contact.title">Get In Touch</h2>
+    <p class="sub" data-i18n="contact.sub">Open for collaborations and technical art roles.</p>
+    <div class="cta-row" style="justify-content: center;">
+      <a class="btn" href="mailto:batuhanmalkocoglu61@gmail.com">batuhanmalkocoglu61@gmail.com</a>
+      <a class="btn" href="https://www.linkedin.com/in/batuhan-malkocc" target="_blank" rel="noopener" data-i18n="cta.linkedin">LinkedIn</a>
+      <a class="btn" href="https://github.com/BatuhanMalkoc" target="_blank" rel="noopener" data-i18n="cta.github">GitHub</a>
+    </div>
+  </section>
+
+  <footer class="container center">© <span id="year"></span> Batuhan Malkoç — All rights reserved.</footer>
+
+  <!-- ================= MODAL OVERLAY ================= -->
+  <div id="modalOverlay" class="modal-overlay hidden">
+    <div class="modal-content">
+      <button class="modal-close">&times;</button>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <script>
+    // ============================
+    // UTILITIES
+    // ============================
+    const $ = (sel, root = document) => root.querySelector(sel);
+    const $$ = (sel, root = document) => [...root.querySelectorAll(sel)];
+
+    // Year
+    $('#year').textContent = new Date().getFullYear();
+
+    // Theme toggle
+    const themeToggle = $('#theme-toggle');
+    const storedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', storedTheme);
+    themeToggle?.addEventListener('click', () => {
+      const cur = document.documentElement.getAttribute('data-theme');
+      const next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+
+    // ============================
+    // Project and Showcase Data
+    // ============================
+    const allCardsData = [
+      {
+    id: 'project1',
+    title: 'GPU Based Propagation System',
+    imagePath: 'images/propagation-system.png',
+    description: 'GPU-driven tool for scattering millions of meshes in real-time, optimized for Unity with an artist-friendly editor.',
+    detailedContent: '<h3>Mesh Propagation System - Deep Dive</h3><p>The Mesh Propagation System is a high-performance, GPU-driven Unity tool that allows you to distribute and stream millions of meshes in real time, optimized for both mobile and desktop platforms. Its intuitive editor lets you customize brush shapes, density curves, and randomization channels with ease. Built with a modular MVP architecture, it is clean, scalable, and integrates LOD for optimal performance.</p><ul><li><strong>Highlights:</strong> GPU-powered mesh scattering, compute shader frustum culling, modular MVP structure</li><li><strong>Platform:</strong> Mobile & desktop optimized</li><li><strong>Quick Start:</strong> Includes installation and step-by-step tutorials</li></ul>',
+    type: 'project',
+    tags: ['tool', 'shader'],
+    youtubeUrl: 'https://www.youtube.com/watch?v=aI5EBxR6-S0'
+},
+      {
+    id: 'project2',
+    title: 'Unity VFX Graph Course',
+    imagePath: 'images/vfx-graph-course.png',
+    description: 'Comprehensive beginner-friendly course teaching Unity VFX Graph, from basics to creating impressive visual effects.',
+    detailedContent: '<h3>Unity VFX Graph - Course Overview</h3><p>This free course guides you from the fundamentals of project setup to creating stunning visual effects using Unity VFX Graph. You will learn the interface, core nodes, and over 30 essential mathematical operations used in visual effect production. The course also explores supplementary tools like Substance Designer and Slate Editor to craft complex effects such as explosions. By the end, you will consolidate all learned techniques into three advanced visual effects, making it a practical portfolio-ready experience.</p><ul><li><strong>Highlights:</strong> Step-by-step tutorials, beginner-friendly, hands-on effect creation</li><li><strong>Resources:</strong> Project files, free e-book, and community contributions</li><li><strong>Platforms:</strong> Unity 2021.3 LTS or newer, VFX Graph, Shader Graph</li></ul>',
+    type: 'project',
+    tags: ['vfx', 'shader'],
+    youtubeUrl: 'https://www.youtube.com/watch?v=23yVfz9R-1w&t=5s&ab_channel=UnityM%C3%BCtercimi'
+},
+{
+    id: 'project3',
+    title: 'Unity URP Transition Shader',
+    imagePath: 'images/gpu-scene-generator.png',
+    description: 'Circular propagation transition shader with dynamic lighting, fog, and audio integration for immersive scene effects.',
+    detailedContent: '<h3>URP Transition Shader - Overview</h3><p>This project showcases a custom Unity URP transition shader that propagates a circular wave across the scene, transforming textures from bright to dark. The shader uses branching logic with two texture types and a slider to control the effect dynamically. The propagation is distance-based relative to a defined central point, giving precise control over the visual transition.</p><p>Beyond the shader, the scene integrates dynamic lighting adjustments: as the wave spreads, the directional light\'s color and angle shift, simulating a day-to-night effect. Additionally, a VFX fog system envelops the scene, and synchronized audio enhances the immersive experience.</p><ul><li><strong>Technology:</strong> Unity, URP, Shader Graph, C# scripting</li><li><strong>Features:</strong> Circular propagation transition, dynamic texture blending, light angle & color modulation, VFX fog, synchronized audio</li><li><strong>Interactivity:</strong> Material parameters controlled via C# scripts for real-time adjustments</li></ul>',
+    type: 'project',
+    tags: ['shader', 'vfx'],
+    youtubeUrl: 'https://www.youtube.com/watch?v=VBClKqknAVY&ab_channel=UnityM%C3%BCtercimi'
+}
+,
+      {
+    id: 'project4',
+    title: 'BookShelf VFX - Inspired from V.A',
+    imagePath: 'images/gpu-scene-generator.png',
+    description: 'Procedural VFX with dynamic particle interactions using player-bound transform data in Unity VFX Graph.',
+    detailedContent: '<h3>BookShelf VFX - Overview</h3><p>This project demonstrates a procedural VFX system using Unity\'s VFX Graph, where floating books dynamically react to the player\'s position. By binding the player\'s transform to the VFX Graph, each particle\'s behavior is controlled based on its distance to the player. When the player approaches a book, the book smoothly returns to the bookshelf, while distant books remain floating with randomized offsets for visual variety.</p><p>The effect showcases data-driven particle manipulation, procedural animations, and interactive VFX, highlighting the power of VFX Graph\'s Data Binding feature for creating responsive and immersive visual effects.</p><ul><li><strong>Technology:</strong> Unity, VFX Graph, C# scripting</li><li><strong>Features:</strong> Player-bound data, distance-based particle control, procedural animations, dynamic book interactions</li><li><strong>Effect:</strong> Interactive floating books that respond to player movement</li></ul>',
+    type: 'project',
+    tags: ['vfx', 'shader'],
+    youtubeUrl: 'https://www.youtube.com/watch?v=hlCbiRdQemA'
+}
+,
+{
+      
+    id: 'project5',
+    title: 'Pop It Cloe | GGJ2025',
+    imagePath: 'images/gpu-scene-generator.png',
+    description: 'Fast-paced jam game where a skilled girl and her bubble buddies battle waves of bacteria in an increasingly challenging arena.',
+    detailedContent: '<h3>Pop It Cloe - Game Overview</h3><p>Pop It Cloe is a playful and action-packed game created for the Global Game Jam 2025. Players control a meticulously trained girl accompanied by her bubble allies. Use the Angry Bubble to launch enemies sky-high or the Gentle Bubble to whisk them on a brief journey among the clouds. The arena becomes progressively harder, testing players\' skills and reflexes as they face millions of bacteria.</p><p>This project highlights rapid prototyping, engaging gameplay mechanics, and creative use of bubble-based abilities to design challenging yet enjoyable interactions. The game demonstrates teamwork in development and showcases an effective balance between fun and difficulty.</p><ul><li><strong>Technology:</strong> Unity, C#, 2D/3D Art Integration</li><li><strong>Features:</strong> Bubble-based combat mechanics, escalating difficulty, player-bubble interactions, jam game design</li><li><strong>Experience:</strong> Fast-paced, engaging gameplay designed for short-session enjoyment</li></ul>',
+    type: 'project',
+    tags: ['game', 'vfx', 'jam'],
+    youtubeUrl: 'https://www.youtube.com/watch?v=FPxdwCQ-Fxg&ab_channel=UnityM%C3%BCtercimi'
+}
+,
+
+     {
+    id: 'project6',
+    title: 'A World Without Me | Goatjam',
+    imagePath: 'images/procedural-terrain.png',
+    description: 'A narrative jam game exploring self-worth through the journey of Sanada in a world with and without them.',
+    detailedContent: '<h3>A World Without Me - Game Overview</h3><p>In this game, players follow Sanada, a character who feels worthless and believes the world has no need for them, on a journey to rediscover self-worth. Through engaging gameplay and narrative choices, players witness the unnoticed contributions Sanada has made to the world and explore how life would unfold in a world without them. The game emphasizes emotional storytelling, player reflection, and meaningful interactions within a thoughtfully crafted world.</p><p>This project showcases narrative-driven jam game design, highlighting how player decisions and exploration can affect story perception and world understanding.</p><ul><li><strong>Technology:</strong> Unity, C#, Narrative Design</li><li><strong>Features:</strong> Emotional storytelling, player-driven exploration, world-impact visualization, jam game mechanics</li><li><strong>Experience:</strong> Reflective, engaging, and thought-provoking gameplay suitable for short play sessions</li></ul>',
+    type: 'project',
+    tags: ['game', 'jam', 'narrative'],
+    youtubeUrl: 'https://www.youtube.com/watch?v=w4LYbG8vkIU&ab_channel=UnityM%C3%BCtercimi'
+},
+
+     {
+  id: 'project7',
+  title: 'The Device | First Class Jam',
+  imagePath: 'images/volumetric-fog.png',
+  description: 'A puzzle game where progress depends on pressing a single button in Morse-like combinations.',
+  detailedContent: `<h3>The Device - Jam Overview</h3>
+<p>In this first-year university jam game, the player holds a device with a single red button. By pressing the button in short and long sequences—similar to Morse code—the player solves puzzles and progresses through the game. The mechanics explore timing, memory, and pattern recognition in a simple yet engaging way.</p>
+<ul>
+<li><strong>Technology:</strong> Unity, C#</li>
+<li><strong>Mechanics:</strong> Morse-like button sequences, Puzzle solving</li>
+<li><strong>Gameplay:</strong> Timing, memory, and pattern recognition challenges</li>
+</ul>`,
+  type: 'project',
+  tags: ['gamejam', 'puzzle'],
+  youtubeUrl: 'https://www.youtube.com/watch?v=S1cNRTSU1f8&ab_channel=UnityM%C3%BCtercimi'
+},
+
+      {
+  id: 'project8',
+  title: 'Gameception | at0mjam2',
+  imagePath: 'images/custom-post-processing.png',
+  description: 'A 2D Construct2 game about cheating your way to victory in a competitive event.',
+  detailedContent: `<h3>Gameception - Jam Overview</h3>
+<p>Created in middle school using Construct2, Gameception is a 2D game where the player aims to win a competitive event with a cash prize. The theme revolves around cheating: the player can access in-game files, modify values like speed or money, and attempt to secure victory. The game explores humor, creativity, and the concept of bending rules to succeed.</p>
+<ul>
+<li><strong>Technology:</strong> Construct2</li>
+<li><strong>Role:</strong> Programming / Kodr</li>
+<li><strong>Gameplay:</strong> Cheating mechanics, strategy, and risk-taking</li>
+</ul>`,
+  type: 'project',
+  tags: ['gamejam', '2d'],
+  youtubeUrl: 'https://www.youtube.com/watch?v=qZL_DRlRYII'
+},
+
+      
+    
+      {
+        id: 'showcase1',
+        title: 'Light Burst',
+        imagePath: 'images/light-burst.png',
+        description: 'A dynamic and impactful light burst effect.',
+        detailedContent: '<h3>Light Burst VFX</h3><p>This visual effect demonstrates a powerful light burst, often used for impacts, spell casting, or dramatic reveals. It utilizes a combination of particle systems, animated textures, and post-processing effects to create a bright, expanding energy wave.</p><ul><li><strong>Category:</strong> VFX</li><li><strong>Key Elements:</strong> Particle Systems, Animated Textures, Glow Effects</li></ul>'
+      },
+      {
+        id: 'showcase2',
+        title: 'Wormhole',
+        imagePath: 'images/wormhole-shader.png',
+        description: 'A mesmerizing shader creating a wormhole tunnel.',
+        detailedContent: '<h3>Wormhole Shader</h3><p>A complex shader that generates a visually stunning wormhole effect, suitable for sci-fi portals or transition sequences. It employs advanced UV manipulation, noise functions, and color grading to simulate depth and motion within the tunnel.</p><ul><li><strong>Category:</strong> Shader</li><li><strong>Key Elements:</strong> UV Distortion, Noise Functions, Color Grading</li></ul>'
+      },
+      {
+        id: 'showcase3',
+        title: 'Ankh Tool',
+        imagePath: 'images/ankh-tool.png',
+        description: 'A custom editor tool for Ankh symbol generation.',
+        detailedContent: '<h3>Ankh Symbol Generator Tool</h3><p>This Unity editor tool allows artists to quickly generate and customize Ankh symbols with various parameters, including size, material, and animation properties. It streamlines the creation process for frequently used assets.</p><ul><li><strong>Category:</strong> Tool</li><li><strong>Key Elements:</strong> Unity Editor Scripting, Custom Inspectors</li></ul>'
+      },
+      {
+        id: 'showcase4',
+        title: 'Force Field Shader',
+        imagePath: 'images/force-field.png',
+        description: 'An energy shield shader with dynamic hit effects.',
+        detailedContent: '<h3>Force Field Shader - Visuals</h3><p>This shader creates a dynamic force field effect, perfect for protective barriers or sci-fi elements. It features animated energy patterns, customizable colors, and reactive hit effects that ripple across the surface when impacted. Optimized for real-time rendering with adjustable transparency and distortion properties.</p><ul><li><strong>Category:</strong> Shader</li><li><strong>Key Elements:</strong> Animated Textures, Distortion, Hit Effects, Real-time Rendering</li></ul>'
+      },
+      {
+        id: 'showcase5',
+        title: 'Magic Spell VFX',
+        imagePath: 'images/magic-spell.png',
+        description: 'A collection of magical spell effects (fireball, ice shard, arcane blast).',
+        detailedContent: '<h3>Magic Spell VFX Pack</h3><p>A versatile collection of magical spell effects, including a fiery fireball, a sharp ice shard, and a shimmering arcane blast. Each effect is designed with distinct visual characteristics and optimized particle systems. They are easily customizable for color, scale, and intensity, making them suitable for various fantasy games.</p><ul><li><strong>Category:</strong> VFX</li><li><strong>Key Elements:</strong> Particle Systems, Animated Textures, Elemental Effects (Fire, Ice, Arcane)</li></ul>'
+      },
+      {
+        id: 'showcase6',
+        title: 'Dialogue System Tool',
+        imagePath: 'images/dialogue-system-tool.png',
+        description: 'An intuitive editor tool for creating and managing complex dialogue trees.',
+        detailedContent: '<h3>Dialogue System Tool - Features</h3><p>This Unity editor tool provides a comprehensive solution for designing and managing complex dialogue trees. It features a node-based visual editor, support for branching narratives, character portraits, and integration with localization systems. The tool streamlines the writing and implementation of in-game conversations, making it easy for writers and designers to create engaging storytelling experiences.</p><ul><li><strong>Category:</strong> Tool</li><li><strong>Key Elements:</strong> Node-based Editor, Branching Logic, Localization Support, Character Management</li></ul>'
+      },
+      {
+        id: 'showcase7',
+        title: 'Liquid Shader',
+        imagePath: 'images/liquid-shader.png',
+        description: 'Realistic liquid shader with dynamic surface tension and foam.',
+        detailedContent: '<h3>Liquid Shader - Realism</h3><p>A highly realistic liquid shader designed for various container types, from potions to water bottles. It simulates dynamic surface tension, foam generation at the edges, and realistic light refraction. The shader supports customizable liquid color, viscosity, and fill levels, providing a convincing visual representation of fluids in game environments.</p><ul><li><strong>Category:</strong> Shader</li><li><strong>Key Elements:</strong> Dynamic Surface Tension, Foam, Refraction, Customizable Properties</li></ul>'
+      },
+      {
+        id: 'showcase8',
+        title: 'Portal VFX',
+        imagePath: 'images/portal-vfx.png',
+        description: 'A shimmering portal effect with distortion and particle trails.',
+        detailedContent: '<h3>Portal VFX - Dimensional Gateway</h3><p>This visual effect creates a captivating portal, suggesting a gateway to another dimension. It combines animated textures for a shimmering surface, distortion effects for a sense of otherworldly energy, and particle trails that emanate from its edges. The effect is designed to be visually striking and can be customized for different elemental themes.</p><ul><li><strong>Category:</strong> VFX</li><li><strong>Key Elements:</strong> Animated Textures, Distortion, Particle Trails, Energy Effects</li></ul>'
+      },
+      {
+        id: 'showcase9',
+        title: 'Asset Importer Tool',
+        imagePath: 'images/asset-importer-tool.png',
+        description: 'Automated asset import and processing tool for Unity.',
+        detailedContent: '<h3>Asset Importer Tool - Automation</h3><p>An essential Unity editor tool for automating the asset import and processing pipeline. It allows for predefined rules to automatically set up textures, materials, models, and animations upon import. This tool ensures consistency across assets, reduces manual errors, and significantly speeds up the workflow for large projects with many assets.</p><ul><li><strong>Category:</strong> Tool</li><li><strong>Key Elements:</strong> Unity Editor Scripting, Automated Rules, Batch Processing, Workflow Optimization</li></ul>'
+      }
+    ];
+
+    // Utility to convert YouTube watch URL to embed URL
+    function convertToEmbedUrl(url) {
+      // Regex to extract the video ID from various YouTube URL formats
+      const regExp = /(?:youtube\.com\/(?:[^/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&? /\s]{11})/;
+      const match = url.match(regExp);
+      // If a valid 11-character ID is found, construct the embed URL
+      if (match && match[1].length === 11) {
+        return `https://www.youtube.com/embed/${match[1]}`;
+      }
+      // Otherwise, return the original URL (or a default/error state if preferred)s
+      return url;
+    }
+
+    // Function to render cards dynamically
+    function renderCards(containerId, cardsData, cardTypeClass) {
+      const container = $(containerId);
+      if (!container) return;
+      container.innerHTML = ''; // Clear existing content
+
+      const filteredCards = cardsData.filter(card => card.type === cardTypeClass);
+
+      filteredCards.forEach(card => {
+        const cardElement = document.createElement('article');
+        cardElement.className = `card ${cardTypeClass === 'showcase' ? 'showcase-card' : ''}`;
+        cardElement.dataset.id = card.id;
+        cardElement.dataset.tags = card.tags.join(' ');
+
+        let mediaHtml = '';
+
+        if (card.youtubeUrl) {
+          const youtubeEmbedUrl = convertToEmbedUrl(card.youtubeUrl);
+          const videoId = youtubeEmbedUrl.split('/').pop(); // Extract video ID
+          const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`; // High-res thumbnail
+          const autoplayEmbedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&loop=1&playlist=${videoId}`; // Autoplay, mute, loop
+
+          if (cardTypeClass === 'project') {
+              mediaHtml = `
+                <div class="thumb video-thumb">
+                  <img class="video-thumbnail-img" src="${thumbnailUrl}" alt="${card.title} video thumbnail">
+                  <iframe class="video-preview-iframe" src="" data-src="${autoplayEmbedUrl}" data-video-id="${videoId}" title="${card.title} video preview" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <div class="video-preview-overlay" data-youtube-original-url="${card.youtubeUrl}" aria-label="Watch ${card.title} video on YouTube" role="button" tabindex="0">
+                    <div class="play-icon">▶</div>
+                  </div>
+                </div>
+              `;
+          } else { // Showcase card with YouTube URL
+              mediaHtml = `
+                <div class="thumb" style="background-image:url('${thumbnailUrl}'), linear-gradient(120deg,#0b0f16,#141a22)"></div>
+              `;
+          }
+        } else { // No YouTube URL, use imagePath
+          mediaHtml = `
+            <div class="thumb" style="background-image:url('${card.imagePath}'), linear-gradient(120deg,#0b0f16,#141a22)"></div>
+          `;
+        }
+
+        // Only project cards have a back face for flipping
+        const backFaceHtml = cardTypeClass === 'project' ? `
+          <div class="face back">
+            <h3>${card.title} - Deep Dive</h3>
+            ${card.detailedContent}
+          </div>
+        ` : '';
+
+        cardElement.innerHTML = `
+          <div class="card-inner">
+            <div class="face front">
+              ${mediaHtml}
+              <h3>${card.title}</h3>
+              <p>${card.description}</p>
+            </div>
+            ${backFaceHtml}
+          </div>
+        `;
+        container.appendChild(cardElement);
+      });
+    }
+
+    // ============================
+    // MODAL LOGIC
+    // ============================
+    const modalOverlay = $('#modalOverlay');
+    const modalBody = $('#modalBody');
+    const modalCloseBtn = $('.modal-close', modalOverlay);
+
+    function openModal(cardId) {
+      const cardData = allCardsData.find(data => data.id === cardId);
+      if (!cardData) return;
+
+      let content = cardData.detailedContent;
+
+      // Check for YouTube links and convert to embed if found
+      const youtubeRegex = /(https?:\/\/(?:www\.)?(?:youtube\.com\/watch\?v=|youtu\.be\/)[\w-]{11}(?:\S+)?)/g; // Corrected regex
+      content = content.replace(youtubeRegex, (match) => {
+        const embedUrl = convertToEmbedUrl(match);
+        return `<div class="video-frame-modal"><iframe src="${embedUrl}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
+      });
+
+      modalBody.innerHTML = content;
+      modalOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden'; // Prevent scrolling body when modal is open
+    }
+
+    function closeModal() {
+      modalOverlay.classList.add('hidden');
+      modalBody.innerHTML = ''; // Clear content
+      document.body.style.overflow = ''; // Restore body scrolling
+    }
+
+    modalCloseBtn.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', (e) => {
+      if (e.target === modalOverlay) {
+        closeModal();
+      }
+    });
+
+    // ============================
+    // Initialize ALL card interactions (tilt, flip, ripple, modal)
+    // ============================
+    function initCardInteractions() {
+      $$('.card').forEach(card => {
+        const inner = $('.card-inner', card);
+
+        // Pointermove for both tilt and glow
+        card.addEventListener('pointermove', e => {
+          // Disable tilt if the card is flipped
+          if (card.classList.contains('is-flipped')) return; // Check for 'is-flipped' class
+
+          const r = card.getBoundingClientRect();
+          const x = e.clientX - r.left; // X position relative to the element
+          const y = e.clientY - r.top;  // Y position relative to the element
+          
+          // Normalize coordinates for both tilt and glow calculations
+          const normX = x / r.width;
+          const normY = y / r.height;
+
+          // Tilt effect (only if not flipped)
+          const rx = (0.5 - normY) * 10; // rotateX
+          const ry = (normX - 0.5) * 16; // rotateY
+          inner.style.setProperty('--rx', rx + 'deg');
+          inner.style.setProperty('--ry', ry + 'deg');
+          inner.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`; // Apply tilt directly here
+
+          // Dynamic glow for outline (always)
+          const distX = Math.abs(normX - 0.5);
+          const distY = Math.abs(normY - 0.5);
+          const distFromCenter = Math.sqrt(distX * distX + distY * distY); // Euclidean distance
+
+          // Apply requested transparency and softness
+          const minOpacity = 0.15; // Subtle glow in the center, overall more transparent
+          const maxOpacity = 0.45; // Stronger glow at edges, but still more transparent
+          const currentOpacity = minOpacity + (maxOpacity - minOpacity) * (distFromCenter / 0.707); // Scale by max possible distance
+
+          const minBlur = 6; // Softer glow in the center (increased from 3)
+          const maxBlur = 15; // More blurred glow at edges (increased from 9)
+          const currentBlur = minBlur + (maxBlur - minBlur) * (distFromCenter / 0.707);
+
+          card.style.setProperty('--glow-opacity', currentOpacity.toFixed(2));
+          card.style.setProperty('--glow-blur', `${currentBlur.toFixed(1)}px`);
+          
+          // Rotate gradient based on mouse position for the rainbow effect
+          const angle = Math.atan2(y - r.height / 2, x - r.width / 2) * (180 / Math.PI); // Angle in degrees relative to center
+          card.style.setProperty('--gradient-rotate', `${angle}deg`);
+        });
+
+        card.addEventListener('pointerleave', () => {
+          // Reset tilt only if not flipped
+          if (!card.classList.contains('is-flipped')) { // Check for 'is-flipped' class
+            inner.style.transform = 'rotateX(0deg) rotateY(0deg)'; // Reset tilt transform
+          }
+          // Always reset glow
+          card.style.setProperty('--glow-opacity', '0');
+          card.style.setProperty('--glow-blur', '0px');
+          card.style.setProperty('--gradient-rotate', '0deg');
+        });
+      });
+    }
+
+    // NEW: Delegated click handler for project and showcase cards
+    document.body.addEventListener('click', (e) => {
+        const card = e.target.closest('.card');
+        if (!card) return; // Click was not on a card
+
+        const isProjectCard = !card.classList.contains('showcase-card');
+        const inner = $('.card-inner', card);
+
+        // 1. Handle video preview clicks (Project Cards only)
+        const videoOverlay = e.target.closest('.video-preview-overlay');
+        if (videoOverlay && isProjectCard) {
+            const originalUrl = videoOverlay.dataset.youtubeOriginalUrl;
+            if (originalUrl) {
+                window.open(originalUrl, '_blank');
+                e.stopPropagation(); // Stop propagation to prevent card flip/ripple
+                return;
+            }
+        }
+
+        // 2. Handle other interactive elements inside the card (e.g., links on back face)
+        // This check should ideally be for elements that are *not* the video overlay
+        // and are intended to be clicked without triggering a flip/modal.
+        if (e.target.closest('a') || e.target.closest('button')) {
+            // If an interactive element *inside* the card was clicked (e.g., a link in detailed content)
+            // and it's not the video overlay, let its default action proceed and don't flip/modal.
+            return;
+        }
+
+        // 3. Apply Ripple Effect (if not a video click)
+        if (!videoOverlay) { // Only apply ripple if it wasn't a video overlay click
+            const r = card.getBoundingClientRect();
+            const x = e.clientX - r.left;
+            const y = e.clientY - r.top;
+            const span = document.createElement('span');
+            span.className = 'ripple';
+            span.style.left = x + 'px';
+            span.style.top = y + 'px';
+            card.appendChild(span);
+            span.addEventListener('animationend', () => span.remove());
+        }
+
+        // 4. Card Flip (Project Cards) or Modal (Showcase Cards)
+        if (isProjectCard) {
+            // Only flip if it wasn't a video overlay click
+            if (!videoOverlay) {
+                card.classList.toggle('is-flipped');
+                // Reset tilt when flipping to ensure flip transform takes precedence
+                inner.style.transform = 'rotateX(0deg) rotateY(0deg)';
+
+                // Stop video playback if card flips
+                const iframe = card.querySelector('.thumb .video-preview-iframe');
+                const staticImg = card.querySelector('.thumb .video-thumbnail-img');
+                const playIcon = card.querySelector('.video-preview-overlay .play-icon');
+
+                if (iframe && staticImg && playIcon) {
+                    iframe.src = ''; // Clear src to stop playback
+                    iframe.style.display = 'none'; // Hide iframe
+                    staticImg.style.display = 'block'; // Show static image
+                    playIcon.style.opacity = '1'; // Show play icon
+                }
+            }
+        } else { // Showcase Card
+            openModal(card.dataset.id);
+        }
+    });
+
+    // NEW FUNCTION: Initialize YouTube video previews (hover-to-play)
+    function initVideoPreviews() {
+      // Select only project cards that have a video thumbnail setup
+      const projectVideoCards = $$('#projectGrid .card .video-thumb');
+
+      projectVideoCards.forEach(videoThumbContainer => {
+        const card = videoThumbContainer.closest('.card'); // Get the parent card
+        const staticImg = videoThumbContainer.querySelector('.video-thumbnail-img');
+        const iframeElement = videoThumbContainer.querySelector('.video-preview-iframe');
+        const videoOverlay = videoThumbContainer.querySelector('.video-preview-overlay');
+        const playIcon = videoThumbContainer.querySelector('.play-icon'); // Get the play icon
+
+        if (!card || !videoThumbContainer || !videoOverlay || !staticImg || !iframeElement || !playIcon) return;
+
+        const autoplayEmbedUrl = iframeElement.dataset.src; // This now holds the autoplay URL
+        // videoId is already in autoplayEmbedUrl, no need for separate dataset.videoId for src building
+
+        // Initial state is already set by CSS: staticImg visible, iframe hidden. Play icon visible.
+
+        videoOverlay.addEventListener('mouseenter', () => {
+          // Disable video hover effect if the card is flipped
+          if (card.classList.contains('is-flipped')) return;
+
+          staticImg.style.display = 'none'; // Hide the static image
+          playIcon.style.opacity = '0'; // Hide the play icon
+          iframeElement.style.display = 'block'; // Show the iframe
+          iframeElement.src = autoplayEmbedUrl; // Load and autoplay the video
+        });
+
+        videoOverlay.addEventListener('mouseleave', () => {
+          // If card flipped while hovering, don't change state, or if it's already flipped
+          if (card.classList.contains('is-flipped')) return; 
+
+          // Stop playback and show static image
+          iframeElement.src = ''; // Clear src to stop playback and release resources
+          iframeElement.style.display = 'none'; // Hide the iframe
+          staticImg.style.display = 'block'; // Show the static image
+          playIcon.style.opacity = '1'; // Show the play icon again
+        });
+      });
+    }
+
+
+
+
+    
+    // ============================
+    // SHOWCASE filter
+    // ============================
+    const filterBtns = $$('.filter button');
+    // showcaseCards will now be dynamically selected after rendering
+
+    filterBtns.forEach(btn => btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const key = btn.dataset.filter;
+      // Re-select showcase cards after dynamic rendering
+      const showcaseCards = $$('#showcaseGrid .card'); 
+      showcaseCards.forEach(card => {
+        const tags = (card.dataset.tags || '').split(/\s+/);
+        const show = key === 'all' || tags.includes(key);
+        card.classList.toggle('hidden', !show);
+      });
+    }));
+
+    // ============================
+    // i18n (EN/TR)
+    // ============================
+    const dict = {
+      en: {
+        'nav.youtube': 'YouTube',
+        'nav.projects': 'Projects',
+        'nav.showcase': 'Showcase',
+        'nav.contact': 'Contact',
+        'hero.role': 'Technical Artist & Game Developer',
+        'hero.lead': 'Crafting immersive experiences through code, shaders, and visual effects.',
+        'cta.viewProjects': 'View Projects',
+        'cta.viewShowcase': 'Open VFX/Shader Showcase',
+        'yt.title': 'YouTube & Socials',
+        'yt.sub': 'Follow my channel and watch my latest video.',
+        'yt.cardTitle': 'My Channel',
+        'yt.cardDesc': 'I post long-form breakdowns on VFX Graph, shaders, tools and technical art processes.',
+        'yt.visitChannel': 'Visit Channel',
+        'yt.toShowcase': 'Explore Showcase',
+        'yt.latest': 'Latest Video',
+        'yt.caption': '6\n‑hour Unity VFX Graph course.',
+        'projects.title': 'Projects',
+        'projects.learn': 'Learn more',
+        'projects.flip': 'Flip',
+        'projects.back': 'Back',
+        'show.title': 'VFX / Shader / Tools Showcase',
+        'show.sub': 'Filter the gallery and click tiles to enjoy rainbow ripple effects.',
+        'filters.all': 'All',
+        'filters.vfx': 'VFX',
+        'filters.shader': 'Shader',
+        'filters.tool': 'Tool',
+        'contact.title': 'Get In Touch',
+        'contact.sub': 'Open for collaborations and technical art roles.',
+        'cta.linkedin': 'LinkedIn',
+        'cta.github': 'GitHub',
+        'cta.viewCv': 'View My CV'
+      },
+      tr: {
+        'nav.youtube': 'YouTube',
+        'nav.projects': 'Projeler',
+        'nav.showcase': 'Showcase',
+        'nav.contact': 'İletişim',
+        'hero.role': 'Teknik Sanatçı & Oyun Geliştirici',
+        'hero.lead': 'Kod, shader ve görsel efektlerle sürükleyici deneyimler üretiyorum.',
+        'cta.viewProjects': 'Projeleri Gör',
+        'cta.viewShowcase': 'VFX/Shader Showcase’i Aç',
+        'yt.title': 'YouTube & Sosyaller',
+        'yt.sub': 'Kanalımı takip et ve son videomu izle.',
+        'yt.cardTitle': 'Kanalım',
+        'yt.cardDesc': 'VFX Graph, shader, tool ve teknik sanat süreçleri üzerine uzun içerikler paylaşıyorum.',
+        'yt.visitChannel': 'Kanalı Ziyaret Et',
+        'yt.toShowcase': 'Showcase’i Keşfet',
+        'yt.latest': 'Son Video',
+        'yt.caption': '6 saatlik Unity VFX Graph kursu.',
+        'projects.title': 'Projeler',
+        'projects.learn': 'Daha fazla öğren',
+        'projects.flip': 'Çevir',
+        'projects.back': 'Geri',
+        'show.title': 'VFX / Shader / Tools Showcase',
+        'show.sub': 'Galeriyi filtrele, kutulara tıkla: gökkuşağı dalga efektini gör.',
+        'filters.all': 'Hepsi',
+        'filters.vfx': 'VFX',
+        'filters.shader': 'Shader',
+        'filters.tool': 'Tool',
+        'contact.title': 'İletişime Geç',
+        'contact.sub': 'İşbirliği ve technical artist rollerine açığım.',
+        'cta.linkedin': 'LinkedIn',
+        'cta.github': 'GitHub',
+        'cta.viewCv': 'CV’mi Görüntüle'
+      }
+    };
+
+    const langs = $$('.lang');
+    let lang = localStorage.getItem('lang') || 'en';
+
+    function applyLang(l) {
+      lang = l;
+      localStorage.setItem('lang', l);
+      langs.forEach(b => b.classList.toggle('active', b.dataset.lang === l));
+      $$('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (dict[l][key]) el.textContent = dict[l][key];
+      });
+    }
+    applyLang(lang);
+    langs.forEach(b => b.addEventListener('click', () => applyLang(b.dataset.lang)));
+
+    // ============================
+    // Dynamic Font Sizing for Card Titles
+    // ============================
+    function adjustCardTitleFontSize() {
+      $$('.card h3').forEach(h3 => {
+        // Reset to default size first to get accurate measurements
+        h3.style.fontSize = '';
+        h3.style.whiteSpace = 'normal'; // Allow wrapping
+        h3.style.overflow = 'hidden';
+        h3.style.textOverflow = 'ellipsis';
+
+        const parentWidth = h3.parentElement.clientWidth; // Get width of the parent face
+        const maxLines = 3; // Allow up to 3 lines for the title
+        const lineHeight = parseFloat(window.getComputedStyle(h3).lineHeight); // Get actual line height
+        const maxHeight = lineHeight * maxLines; // Max height for the title
+
+        let currentFontSize = parseFloat(window.getComputedStyle(h3).fontSize);
+        let tempH3 = h3.cloneNode(true); // Clone for measurement
+        tempH3.style.position = 'absolute';
+        tempH3.style.visibility = 'hidden';
+        tempH3.style.width = `${parentWidth}px`; // Constrain width
+        tempH3.style.height = 'auto'; // Allow height to grow for measurement
+        tempH3.style.whiteSpace = 'normal';
+        tempH3.style.overflow = 'visible';
+        tempH3.style.textOverflow = 'clip';
+        document.body.appendChild(tempH3);
+
+        // Gradually decrease font size until it fits within maxLines or minFontSize
+        while (tempH3.scrollHeight > maxHeight && currentFontSize > 14) {
+          currentFontSize -= 0.5; // Decrease by 0.5px
+          tempH3.style.fontSize = `${currentFontSize}px`;
+        }
+        
+        // Apply the determined font size
+        h3.style.fontSize = `${currentFontSize}px`;
+
+        document.body.removeChild(tempH3);
+      });
+    }
+
+    // ============================
+    // Smooth section reveal on scroll
+    // ============================
+    const reveal = new IntersectionObserver((entries) => {
+      entries.forEach(ent => {
+        if (ent.isIntersecting) {
+          ent.target.animate([
+            {
+              opacity: 0,
+              transform: 'translateY(16px)'
+            },
+            {
+              opacity: 1,
+              transform: 'translateY(0)'
+            }
+          ], {
+            duration: 500,
+            easing: 'var(--ease)'
+          });
+          reveal.unobserve(ent.target);
+        }
+      });
+    }, {
+      threshold: .14
+    });
+    
+    // Initial call to render cards and initialize interactions
+    document.addEventListener('DOMContentLoaded', () => {
+      renderCards('#projectGrid', allCardsData, 'project');
+      renderCards('#showcaseGrid', allCardsData, 'showcase');
+      
+      // Re-initialize interactions for newly rendered cards
+      initCardInteractions();
+      initVideoPreviews();
+
+      // Re-observe elements for reveal animation after they are in the DOM
+      $$('section, .card').forEach(el => reveal.observe(el));
+
+      // Adjust font size after cards are rendered
+      adjustCardTitleFontSize();
+    });
+    window.addEventListener('resize', debounce(adjustCardTitleFontSize, 200));
+
+    // Debounce function for resize event
+    function debounce(func, delay) {
+      let timeout;
+      return function(...args) {
+        const context = this;
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func.apply(context, args), delay);
+      };
+    }
+  </script>
+  <script>
+  document.querySelectorAll(".thumb.video-thumb").forEach(card => {
+    const iframe = card.querySelector(".video-preview-iframe");
+    const overlay = card.querySelector(".video-preview-overlay");
+    const src = iframe.getAttribute("data-src");
+
+    // Hover başlarken video aç
+    card.addEventListener("mouseenter", () => {
+      iframe.setAttribute("src", src);
+      iframe.style.display = "block";
+    });
+
+    // Hover bitince video temizle
+    card.addEventListener("mouseleave", () => {
+      iframe.setAttribute("src", "");
+      iframe.style.display = "none";
+    });
+
+    // Click → YouTube yönlendirme
+    overlay.addEventListener("click", () => {
+      const url = overlay.getAttribute("data-youtube-original-url");
+      if (url) {
+        window.open(url, "_blank");
+      }
+    });
+  });
+</script>
+
+
+
+</body></html>

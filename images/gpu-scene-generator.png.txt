@@ -1,0 +1,6 @@
+This is a placeholder for the image: images/gpu-scene-generator.png
+
+Project Title: undefined
+Description: "undefined"
+
+Please replace this .txt file with your actual image.
